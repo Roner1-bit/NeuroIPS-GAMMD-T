@@ -88,7 +88,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right" 
 
-LLAMA2_CONTEXT_LENGTH = 1024
+LLAMA2_CONTEXT_LENGTH = 4096
 
 
 @app.post("/process")
